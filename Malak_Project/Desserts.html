@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>Main Courses</title>
+    <link rel="stylesheet" href="Styles/NavScroll.css" />
+    <link rel="stylesheet" href="Styles/Desserts.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="Home.html">Home</a>
+      <div class="dropdown">
+        <!-- Dropdown title with arrow -->
+        <div class="dropdown-title">
+          <p class="dropdown-txt">Menu</p>
+          <span class="dropdown-arrow"></span>
+          <!--A generic inline container element. You use this element to wrap sections of text for styling purposes or to add attributes to a section of text without creating a new line of content.-->
+        </div>
+
+        <!-- Dropdown list -->
+        <div class="dropdown-list">
+          <a href="MainCourses.html" class="dropdown-list-item">Main Course</a>
+          <a href="Desserts.html" class="dropdown-list-item">Desserts</a>
+          <a href="Beverages.html" class="dropdown-list-item">Beverages</a>
+        </div>
+      </div>
+      <img class="nav-img" src="Images/Home/Logo.png" />
+      <a href="AboutUs.html">About Us</a>
+      <a href="Review.html">Review</a>
+    </nav>
+
+    <header>
+      <h1 class="heading">Desserts</h1>
+    </header>
+    <br />
+    <div class="menu">
+      <table align="center">
+        <tr>
+          <!--pics-->
+          <td>
+            <img src="Images/Desserts/Nutella_Oreo_Pancake.jpg" class="im" />
+          </td>
+          <td>
+            <img src="Images/Desserts/Tropical_Fruit_Pancake.jpg" class="im" />
+          </td>
+        </tr>
+        <tr>
+          <!--Titles-->
+          <th><button id="NutOreo" onclick="updateMenuItem('NutOreo', 'Nutella Oreo Pancake', '165', 'NO-desc')">Show Info</button></th>
+          <th><button id="TropFru" onclick="updateMenuItem('TropFru', 'Tropical Fruits Pancake', '160', 'TF-desc')">Show Info</button></th>
+        </tr>
+        <tr>
+          <!--Description-->
+          <td id="NO-desc">
+            A heavenly breakfast treat that combines fluffy pancake batter with
+            generous swirls of Nutella and a sprinkle of crushed Oreo cookies.
+          </td>
+          <td id="TF-desc">
+            A fluffy pancake base topped with a colorful assortment of fresh
+            tropical fruits such as mango, pineapple, and kiwi.
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="Images/Desserts/MiniCinnamonRolls.png" class="im" />
+          </td>
+          <td><img src="Images/Desserts/Mix_Profiteroles.jpg" class="im" /></td>
+        </tr>
+        <tr>
+          <th><button id="MinCin" onclick="updateMenuItem('MinCin', 'Mini Cinnamon Roll', '150', 'MC-desc')">Show Info</button></th>
+          <th>
+            <button id="MinProf" onclick="updateMenuItem('MinProf', 'Mix Sauce Profiteroles', '170', 'MP-desc')">Show Info</button>
+          </th>
+        </tr>
+        <tr>
+          <td id="MC-desc">
+            9 pieces of bite-sized delights dipped in Nutella, Pistachio and
+            Lotus These miniature treats are soft, pillowy, and swirled with a
+            cinnamon-infused filling.
+          </td>
+          <td id="MP-desc">
+            Delicate puffs of choux pastry filled with a creamy, luscious
+            filling, like vanilla custard or whipped cream. You have the option
+            to choose two delectable sauces from Lotus, Nutella, and pistachio
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+        <tr>
+          <!--pics-->
+          <td><img src="Images/Desserts/Lotus_Crepe_Roll.png" class="im" /></td>
+          <td>
+            <img src="Images/Desserts/Triple_Chocolate_Crepe.webp" class="im" />
+          </td>
+        </tr>
+        <tr>
+          <!--Titles-->
+          <th><button id="LotWrap" onclick="updateMenuItem('LotWrap', 'Lotus Crepe Wrap', '190', 'LW-desc')">Show Info</button></th>
+          <th><button id="TripChoco" onclick="updateMenuItem('TripChoco', 'Triple Chocolate Crepe Wrap', '180', 'TC-desc')">Show Info</button></th>
+        </tr>
+        <tr>
+          <!--Description-->
+          <td id="LW-desc">
+            A delightful fusion of delicate crepes and the irresistible flavors
+            of Lotus Biscoff. The crepe is thin and tender, enveloping a
+            generous spread of Lotus Biscoff cookie butter.
+          </td>
+          <td id="TC-desc">
+            A thin and lacy chocolate crepe filled with a trio of chocolate
+            delights. It's filled with a combination of Nutella, chocolate sauce
+            and white chocolate
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+      </table>
+    </div>
+    <script src="Scripts/Menu.js"></script>
+  </body>
+</html>

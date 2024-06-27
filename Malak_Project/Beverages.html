@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <title>Beverages</title>
+    <link rel="stylesheet" href="Styles/NavScroll.css" />
+    <link rel="stylesheet" href="Styles/Beverages.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="Home.html">Home</a>
+      <div class="dropdown">
+        <!-- Dropdown title with arrow -->
+        <div class="dropdown-title">
+          <p class="dropdown-txt">Menu</p>
+          <span class="dropdown-arrow"></span>
+          <!--A generic inline container element. You use this element to wrap sections of text for styling purposes or to add attributes to a section of text without creating a new line of content.-->
+        </div>
+
+        <!-- Dropdown list -->
+        <div class="dropdown-list">
+          <a href="MainCourses.html" class="dropdown-list-item">Main Course</a>
+          <a href="Desserts.html" class="dropdown-list-item">Desserts</a>
+          <a href="Beverages.html" class="dropdown-list-item">Beverages</a>
+        </div>
+      </div>
+      <img class="nav-img" src="Images/Home/Logo.png" />
+      <a href="AboutUs.html">About Us</a>
+      <a href="Review.html">Review</a>
+    </nav>
+    <header>
+      <h1 class="heading">Beverages</h1>
+    </header>
+    <br />
+    <div class="menu">
+      <table align="center">
+        <tr>
+          <!--pics-->
+          <td><img src="Images/Beverages/TurkishCoffee.jpg" class="im" /></td>
+          <td><img src="Images/Beverages/FrenchCoffee.jpg" class="im" /></td>
+        </tr>
+        <tr>
+          <!--Titles-->
+          <th>
+            <button id="TurkishCoffee" onclick="updateMenuItem('TurkishCoffee', 'Turkish Coffee', '40', 'TC-desc')">Show Info</button>
+          </th>
+          <th>
+            <button id="FrenchCoffee" onclick="updateMenuItem('FrenchCoffee', 'French Coffee', '70', 'FC-desc')">Show Info</button>
+          </th>
+        </tr>
+        <tr>
+          <!--Description-->
+          <td id="TC-desc">
+            Aromatic drink made by finely grinding coffee beans into a powder
+            and then brewing it in a special pot called a cezve.The coffee is
+            typically served unfiltered, resulting in a thick and strong
+            beverage.
+          </td>
+          <td id="FC-desc">
+            Freshly brewed coffee and hot milk.The coffee used is typically a
+            medium or dark roast, resulting in a rich and robust flavor.
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+        <tr>
+          <td><img src="Images/Beverages/CaramelFrappe.jpg" class="im" /></td>
+          <td>
+            <img src="Images/Beverages/MixedBerryFrappe.jpg" class="im" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <button id="CaramelFrappe" onclick="updateMenuItem('CaramelFrappe', 'Caramel Frappe', '115', 'CF-desc')">Show Info</button>
+          </th>
+          <th>
+            <button id="MixedBerryFrappe" onclick="updateMenuItem('MixedBerryFrappe', 'Mixed Berry Frappe', '115', 'MBF-desc')">Show Info</button>
+          </th>
+        </tr>
+        <tr>
+          <td id="CF-desc">
+            Delightful and indulgent blended coffee beverage, typically consists
+            of a combination of coffee, milk, ice, and caramel syrup, blended
+            together,often topped with whipped cream
+          </td>
+          <td id="MBF-desc">
+            Fruity and refreshing beverage made with a blend of various berries,
+            such as strawberries, blueberries, raspberries, and blackberries.The
+            berries are typically combined with ice, milk or yogurt, and a
+            sweetener
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+        <tr>
+          <!--pics-->
+          <td><img src="Images/Beverages/MangoJuice.jpg" class="im" /></td>
+          <td><img src="Images/Beverages/LemonMint.jpg" class="im" /></td>
+        </tr>
+        <tr>
+          <!--Titles-->
+          <th><button id="MangoJuice" onclick="updateMenuItem('MangoJuice', 'Mango Juice', '75', 'MJ-desc')">Show Info</button></th>
+          <th><button id="LemonMint" onclick="updateMenuItem('LemonMint', 'Lemon Mint', '70', 'LM-desc')">Show Info</button></th>
+        </tr>
+        <tr>
+          <!--Description-->
+          <td id="MJ-desc">
+            Refreshing and tropical beverage made from the pulpy flesh of ripe
+            mangoes. It is rich in vitamins, minerals, and antioxidants
+          </td>
+          <td id="LM-desc">
+            Zesty and invigorating beverage that combines the tangy freshness of
+            lemons with the cool and aromatic flavor of mint. It is a mixture of
+            squeezed fresh lemons, mint leaves, and a sweetener
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+        <tr>
+          <!--pics-->
+          <td><img src="Images/Beverages/CherryCola.jpg" class="im" /></td>
+          <td><img src="Images/Beverages/Mojito.jpg" class="im" /></td>
+        </tr>
+        <tr>
+          <!--Titles-->
+          <th><button id="CherryCola" onclick="updateMenuItem('CherryCola', 'Cherry Cola', '75', 'CC-desc')">Show Info</button></th>
+          <th><button id="Mojito" onclick="updateMenuItem('Mojito', 'Mojito', '80', 'M-desc')">Show Info</button></th>
+        </tr>
+        <tr>
+          <!--Description-->
+          <td id="CC-desc">
+            Flavorful and fizzy beverage that combines the sweetness of cherries
+            with the familiar taste of cola. It is made by adding cherry syrup
+            or cherry-flavored cola syrup to regular cola
+          </td>
+          <td id="M-desc">
+            Classic cocktail made with a combination of rum, fresh lime juice,
+            mint leaves, sugar, and soda water,muddled together and mixed with
+            ice.They are often garnished with a sprig of mint and a lime wedge.
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+      </table>
+    </div>
+    <script src="Scripts/Menu.js"></script>
+  </body>
+</html>

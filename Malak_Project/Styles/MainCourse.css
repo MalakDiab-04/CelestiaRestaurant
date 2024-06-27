@@ -1,0 +1,77 @@
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  border-radius: 50px;
+  background-color: #c0986f;
+  width: 270px;
+}
+
+/* Menu */
+
+table {
+  height: 1300px;
+  font-family: "Klee One", cursive;
+  font-weight: 400;
+}
+
+td {
+  padding: 0 150px;
+}
+
+th {
+  font-size: 20px;
+}
+
+.menu th,
+td {
+  text-align: center;
+}
+
+.menu img {
+  width: 380px;
+  height: 300px;
+  border: 15px solid beige;
+  border-radius: 25px;
+}
+
+#CordonBleu,
+#GrilledChicken,
+#RoChPiccata,
+#MushBePic,
+#JumSte,
+#CeBe {
+  font-family: "Klee One", cursive;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid #d7b998;
+  background-color: #d7b998;
+  margin-top: 5px;
+}
+
+#CordonBleu:hover,
+#GrilledChicken:hover,
+#RoChPiccata:hover,
+#MushBePic:hover,
+#JumSte:hover,
+#CeBe:hover {
+  cursor: pointer;
+}
+
+#CB-desc,
+#GC-desc,
+#RCP-desc,
+#MBP-desc,
+#JS-desc,
+#CBE-desc {
+  font-size: 1px;
+  color: #895e38;
+  user-select: none;
+}

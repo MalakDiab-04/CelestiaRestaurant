@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Review</title>
+    <link rel="stylesheet" href="Styles/NavScroll.css" />
+    <link rel="stylesheet" href="Styles/Review.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="Home.html">Home</a>
+      <div class="dropdown">
+        <!-- Dropdown title with arrow -->
+        <div class="dropdown-title">
+          <p class="dropdown-txt">Menu</p>
+          <span class="dropdown-arrow"></span>
+          <!--A generic inline container element. You use this element to wrap sections of text for styling purposes or to add attributes to a section of text without creating a new line of content.-->
+        </div>
+
+        <!-- Dropdown list -->
+        <div class="dropdown-list">
+          <a href="MainCourses.html" class="dropdown-list-item">Main Course</a>
+          <a href="Desserts.html" class="dropdown-list-item">Desserts</a>
+          <a href="Beverages.html" class="dropdown-list-item">Beverages</a>
+        </div>
+      </div>
+      <img class="nav-img" src="Images/Home/Logo.png" />
+      <a href="AboutUs.html">About Us</a>
+      <a href="Review.html">Review</a>
+    </nav>
+
+    <header>Reviews</header>
+    <div class="divider">
+      <div class="line"></div>
+    </div>
+  
+  
+  <div class="review-form"></div>
+    <h1>Leave us a nice review!</h1>
+    <form id="reviewForm" onsubmit="event.preventDefault();addReview()">
+        <label for="reviewName">Name:</label>
+        <input class="input-name" id="reviewName"  type="text"   required> <br>
+        <label for="reviewMessage">Message:</label>
+        <textarea class="input-txt"  id="reviewMessage" placeholder="Type here......" required></textarea> <br>
+        <input class="input-btn" type="submit" value="Submit Review">
+    </form>
+  </div>
+
+
+
+<h2>Recent Reviews</h2>
+<ul class="reviews-list" id="reviewsList">
+  <!-- Existing reviews will be added dynamically here -->
+</ul>
+
+
+<table cellpadding="35px">
+<tr>
+<td>
+    <img width="20px" src="Images/Review/profile_pic.svg"/><span class="pname">Lydia</span>
+    <p class="ptext" >"Great ambiance and friendly service."</p> 
+</td>
+</tr>
+<tr>
+  <td>
+      <img width="20px" src="Images/Review/profile_pic.svg"/><span class="pname">Suee</span>
+      <p class="ptext" >"The menu offers a variety of dishes, from classics to creative specialties. The flavors are on point, and portions are generous."</p> 
+  </td>
+</tr>
+<tr>
+  <td>
+      <img width="20px" src="Images/Review/profile_pic.svg"/><span class="pname">Looky</span>
+      <p class="ptext" >"They serve tasty sandwiches, salads, and pastries, perfect for a casual lunch. The coffee is exceptional too."</p> 
+  </td>  
+
+</tr>
+<tr>
+  <td>
+      <img width="20px" src="Images/Review/profile_pic.svg"/><span class="pname">Karim</span>
+      <p class="ptext" >"A haven for dessert lovers! Their specialty coffee drinks perfectly complement the sweet treats.</p> 
+   
+  </td>  
+
+</tr>
+<tr>
+  <td>
+      <img width="20px" src="Images/Review/profile_pic.svg"/><span class="pname">Ziad</span>
+      <p class="ptext" >"freshly baked pastries, but food takes too much time"</p> 
+  </td>  
+
+</tr>
+<tr>
+  <td>
+      <img width="20px" src="Images/Review/profile_pic.svg"/><span class="pname">Patrick</span>
+      <p class="ptext" >"Disappointing experience.Not worth the hype. "</p>
+  </td>  
+
+</tr>
+</table>
+
+<script src="Scripts/Review.js"></script>
+</body>
+</html>
+
+  
+
+
+

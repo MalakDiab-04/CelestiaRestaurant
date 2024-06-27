@@ -1,0 +1,90 @@
+/* Importing Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Carter+One&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Klee+One&family=Sevillana&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #895e38;
+  color: beige;
+}
+
+/* Scrolball */
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: beige; 
+  border-radius: 10px;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(246, 210, 166);
+  opacity: 0.7;
+  font-size: 25px;
+  height: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #020202;
+  font-family: "Cairo", sans-serif;
+  font-size: 35px;
+}
+
+.dropdown-title {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.dropdown-txt {
+  font-family: "Cairo", sans-serif;
+  color: #020202;
+  display: inline;
+}
+
+.dropdown-arrow::after {  /*after: insert content after the content of an element.*/
+  content: "\25BC"; /* Unicode character for a downward arrow */
+  color: #020202;  /* It creates a virtual element after the content of the selected element. */
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: rgb(246, 210, 166);
+}
+
+/* Style for dropdown list items */
+.dropdown:hover .dropdown-list {
+  display: block; /* El display block betkhaly haga taht baad. Style for dropdown list items */
+}
+
+.dropdown-list-item {
+  padding: 12px 16px;
+  display: block; /* Style for dropdown list items */
+}
+
+.dropdown-list-item:hover {
+  background-color: beige; /* Change background color of dropdown list items on hover */
+}
+
+.nav-img {
+  width: 200px;
+  transition: width 0.5s;
+}
+
+.nav-img:hover {
+  width: 250px;
+}

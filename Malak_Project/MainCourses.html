@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Main Course</title>
+    <link rel="stylesheet" href="Styles/NavScroll.css" />
+    <link rel="stylesheet" href="Styles/MainCourse.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="Home.html">Home</a>
+      <div class="dropdown">
+        <!-- Dropdown title with arrow -->
+        <div class="dropdown-title">
+          <p class="dropdown-txt">Menu</p>
+          <span class="dropdown-arrow"></span>
+          <!--A generic inline container element. You use this element to wrap sections of text for styling purposes or to add attributes to a section of text without creating a new line of content.-->
+        </div>
+
+        <!-- Dropdown list -->
+        <div class="dropdown-list">
+          <a href="MainCourses.html" class="dropdown-list-item">Main Course</a>
+          <a href="Desserts.html" class="dropdown-list-item">Desserts</a>
+          <a href="Beverages.html" class="dropdown-list-item">Beverages</a>
+        </div>
+      </div>
+      <img class="nav-img" src="Images/Home/Logo.png" />
+      <a href="AboutUs.html">About Us</a>
+      <a href="Review.html">Review</a>
+    </nav>
+    <header>
+      <h1 class="heading">Main Course</h1>
+    </header>
+    <br />
+    <div class="menu">
+      <table align="center">
+        <tr>
+          <!--pics-->
+          <td>
+            <img src="Images/MainCourses/Cordon_Bleu.png" class="im" />
+          </td>
+          <td>
+            <img src="Images/MainCourses/Grilled_Chicken.png" class="im" />
+          </td>
+        </tr>
+        <tr>
+          <!--Titles-->
+          <th><button id="CordonBleu" onclick="updateMenuItem('CordonBleu', 'Cordon Bleu', '410', 'CB-desc')">Show Info</button></th>
+          <th><button id="GrilledChicken" onclick="updateMenuItem('GrilledChicken', 'Grilled Chicken', '355', 'GC-desc')">Show Info</button></th>
+        </tr>
+        <tr>
+          <!--Description-->
+          <td id="CB-desc">
+            Fried chicken breasts stuffed with Cheddar Cheese and smoked salami
+            and served with your choice of two sides dishes or one pasta or
+            green salad.
+          </td>
+          <td id="GC-desc">
+            2 grilled chicken breasts with stereo citrus spices and served with
+            only 2 of your choice of side dishes or 1 type of pasta or green
+            salad.
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="Images/MainCourses/Rosemary_Chicken_Piccata.png"
+              class="im"
+            />
+          </td>
+          <td>
+            <img
+              src="Images/MainCourses/Mushroom_Beef_Piccata.png"
+              class="im"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <button id="RoChPiccata" onclick=" updateMenuItem('RoChPiccata', 'Rosemary Chicken Piccata', '355', 'RCP-desc')">Show Info</button>
+          </th>
+          <th><button id="MushBePic" onclick="updateMenuItem('MushBePic', 'Mushroom Beef Piccata', '500', 'MBP-desc')">Show Info</button></th>
+        </tr>
+        <tr>
+          <td id="RCP-desc">
+            Piece of chicken piccata with rosemary sauce served with your choice
+            of two side dishes or one pasta or green salad.
+          </td>
+          <td id="MBP-desc">
+            Piece of beef piccata with Mushroom Sauce served with your choice of
+            two side dishes or one pasta or green salad.
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+        <tr>
+          <!--pics-->
+          <td><img src="Images/MainCourses/Jumbo_Steak.png" class="im" /></td>
+          <td>
+            <img src="Images/MainCourses/Celestial_Beef.png" class="im" />
+          </td>
+        </tr>
+        <tr>
+          <!--Titles-->
+          <th><button id="JumSte" onclick="updateMenuItem('JumSte', 'Jumbo Steak', '550', 'JS-desc')">Show Info</button></th>
+          <th><button id="CeBe" onclick="updateMenuItem('CeBe', 'Celestial Beef', '600', 'CBE-desc')">Show Info</button></th>
+        </tr>
+        <tr>
+          <!--Description-->
+          <td id="JS-desc">
+            A piece of jumbo steak, 350 grams, grilled with special stereo
+            spices and two types of sauce of your choice.
+          </td>
+          <td id="CBE-desc">
+            Veal slices marinated with special Celestia's spices and served with
+            your choice of two sides dishes of one pasta or green salad.
+          </td>
+        </tr>
+        <tr>
+          <td ><br></td>
+          <td ><br></td>
+        </tr>
+      </table>
+    </div>
+    <script src="Scripts/Menu.js"></script>
+  </body>
+</html>
